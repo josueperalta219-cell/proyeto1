@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi Pasaporte</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-color: white;
+		} 
+		header{
+			background-color: lightyellow;
+			text-align: center;
+			font-family: arial black;
+			height: 80px;
+			width: 100%;
+
+		}
+		ul, ol{
+			list-style: none;
+		}
+		.nav{
+			width: 500px;
+			margin: auto;
+		}
+		.nav > li{
+			float: left;
+		}
+		.nav li a{
+			background-color: #000;
+			color: #fff;
+			text-decoration: none;
+			padding: 10px 12px;
+			display: block;
+		}
+		.nav li a:hover{
+			background-color: #434343;
+		}
+		.nav li ul{
+			display: none;
+			position: absolute;
+			min-width: 140px;
+			text-align: left;
+		}
+		.nav li:hover > ul{
+			display: block;
+		}
+		.nav li ul li {
+			position: relative;
+		}
+		.nav li ul li ul{
+			right: -140px;
+			top: 0px;
+		}
+		nav{
+			border: 1px solid black;
+			background-color: #000;
+			text-align: center;
+			font-family: arial black;
+			height: 42px;
+			width: 100%;
+			
+		}
+		main{
+			text-align: center;
+			font-family: arial black;
+			min-height: calc(100vh - 100px);
+			width: 100%;
+			margin-bottom: 10px;
+			display: flex;
+		}
+		article{
+			margin: 15px;
+			border-radius: 20px;
+			background-color: revert;
+			text-align: center;
+			font-family: arial black;
+			min-height: 100%;
+			width: 80%;
+			margin-bottom: 10px;
+		}
+		section{
+			border-radius: 20px;
+			background-color: lightcyan;
+			text-align: justify;
+			font-family: arial;
+			padding: 20px;
+			width: 90%;
+			margin-bottom: 10px;
+			margin: 20px;
+ 			margin-top: 20px;
+		}
+		aside{
+			border-radius: 20px;
+			text-align: left;
+			font-family: arial black;
+			min-height: 100%;
+			width: 18%;
+			margin-bottom: 10px;
+			margin-left: 15px;
+			position: fixed;
+			right: 0;
+			padding-top: 10px;
+			padding-left: 15px;
+		}
+		footer{
+			background-color: green;
+			text-align: center;
+			font-family: arial black;
+			min-height: 50px;
+			width: 100%;
+			padding: 20px;
+			color: #f5c227;
+			text-shadow: 5px 5px 10px;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+			border-radius: 10px;
+			box-shadow: purple 5px 5px 10px; 
+        }
+        a{ 
+        	text-decoration: none;
+        	color: black;
+        	padding-left: 20px;
+
+        }
+
+        <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Sistemático</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background-color: white;
+			font-family: Arial, sans-serif;
+		} 
+		header{
+			background-color: lightyellow;
+			text-align: center;
+			font-family: arial black;
+			height: auto;
+			padding: 10px;
+			width: 100%;
+		}
+		ul, ol{
+			list-style: none;
+		}
+		.nav{
+			width: 100%;
+			max-width: 500px;
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.nav > li{
+			position: relative;
+		}
+		.nav li a{
+			background-color: #000;
+			color: #fff;
+			text-decoration: none;
+			padding: 10px 12px;
+			display: block;
+		}
+		.nav li a:hover{
+			background-color: #434343;
+		}
+		.nav li ul{
+			display: none;
+			position: absolute;
+			min-width: 140px;
+			text-align: left;
+			z-index: 999;
+		}
+		.nav li:hover > ul{
+			display: block;
+		}
+		nav{
+			border: 1px solid black;
+			background-color: #000;
+			text-align: center;
+			font-family: arial black;
+			height: auto;
+			width: 100%;
+		}
+		main{
+			text-align: center;
+			font-family: arial black;
+			min-height: calc(100vh - 100px);
+			width: 100%;
+			margin-bottom: 10px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		article{
+			flex: 1;
+			margin: 15px;
+			border-radius: 20px;
+			background-color: blue;
+			text-align: center;
+			font-family: arial black;
+			min-height: 100%;
+			width: 70%;
+		}
+		section{
+			border-radius: 20px;
+			background-color: skyblue;
+			text-align: justify;
+			font-family: arial;
+			padding: 20px;
+			width: 90%;
+			margin: 20px auto;
+		}
+		aside{
+			border-radius: 20px;
+			text-align: left;
+			font-family: arial black;
+			width: 20%;
+			margin: 15px;
+			padding: 15px;
+			position: sticky;
+			top: 10px;
+			align-self: flex-start;
+		}
+		footer{
+			background-color: green;
+			text-align: center;
+			font-family: arial black;
+			min-height: 50px;
+			width: 100%;
+			padding: 20px;
+			color: #f5c227;
+			text-shadow: 5px 5px 10px;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+			border-radius: 10px;
+			box-shadow: purple 5px 5px 10px; 
+		}
+		a{
+			text-decoration: none;
+			color: black;
+			padding-left: 5px;
+		}
+
+		/* 📱 RESPONSIVE */
+		@media (max-width: 1024px){
+			main{
+				flex-direction: column;
+				align-items: center;
+			}
+			article, aside{
+				width: 95%;
+				position: static;
+			}
+		}
+
+		@media (max-width: 600px){
+			.nav{
+				flex-direction: column;
+				width: 100%;
+			}
+			.nav li{
+				width: 100%;
+			}
+			.nav li a{
+				text-align: center;
+			}
+			header h2{
+				font-size: 18px;
+			}
+			section{
+				width: 100%;
+				padding: 15px;
+        	}
+        }
+
+	</style>
+</head>
+<body>
+	<header><h2>Mi pasaporte al Exito LCM</h2>
+	Bachillerato en Computación con Orientación Cientifica
+	</header>
+	<nav>
+		 <ul class="nav">
+		 	<li><a href="#ini">Inicio</a></li>
+		 	<li><a href="#ini">Sobre la carrera</a></li>
+		 	<li><a href="">Cursos</a>
+		 		<ul>
+		 			<li><a href="#ef">Educación Física</a></li>
+		 			<li><a href="#it">Inglés Técnico</a></li>
+		 			<li><a href="#ci">Computación/Instalación</a></li>
+		 			<li><a href="#cl">Comunicación</a></li>
+		 			<li><a href="#ff">Física</a></li>
+		 			<li><a href="#ma">Matemática</a></li>
+		 			<li><a href="#cg">Contabilidad</a></li>
+		 			<li><a href="#es">Estudios Sociales</a></li>
+		 			<li><a href="#pr">Programación</a></li>
+		 			<li><a href="#ee">Estadística</a></li>
+		 		</ul></li>
+		 	<li><a href="#con">Logo</a></li>
+		 </ul>
+	</nav>
+	<main>
+		<article>
+			<section id="ini">
+				<h1 id="sn">Sobre la carrera</h1>
+				<h2 id="mis">Bachillerato en Computación con Orientación Cientifica </h2>
+				<p>La carrera trata de es un programa educativo que fusiona el área de la computación con las ciencias básicas (matemáticas, física, química) para preparar a los estudiantes para futuras carreras universitarias en campos como la ingeniería y los sistemas, además de desarrollar habilidades para resolver problemas complejos con pensamiento lógico y crítico utilizando la tecnología. </p>
+				<center><img src="https://melvineduardo.wordpress.com/wp-content/uploads/2014/06/dsc05141.jpg"></center>
+			</section>
+			<section id="pro">
+				<h1 id="car">Cursos</h1>
+				<hr>
+				<h2 id="ef">Educación Física</h2>
+				<p>Trata sobre la educación integral del cuerpo humano a través del movimiento, buscando desarrollar la motricidad, mejorar la condición física (fuerza, resistencia, flexibilidad), promover hábitos de vida saludables, y fomentar valores como el respeto, la solidaridad y el trabajo en equipo, integrando la salud individual y el bienestar social a través de actividades como el juego motor y el deporte.  </p><br>
+				<center><img src="https://media.istockphoto.com/id/1399931492/es/vector/ni%C3%B1os-en-el-gimnasio-con-un-entrenador-entrenando-f%C3%ADsicamente-ilustraci%C3%B3n-plana-vectorial.jpg?s=170667a&w=is&k=20&c=bfD6OQzUl4uBmSylj9bdHqqLO231YMuIpGHYV4dIcqk="></center><br>
+				<hr>
+				<h2 id="it">Inglés Técnico</h2>
+				<p>Un curso de inglés técnico se enfoca en enseñar el vocabulario, las expresiones y las estructuras gramaticales específicas de un campo profesional o industrial concreto, como la ingeniería, la medicina o la informática.</p><br>
+				<center><img src="https://media.istockphoto.com/id/1214244642/es/vector/personas-que-aprenden-ilustraci%C3%B3n-vectorial-isom%C3%A9trica-en-ingl%C3%A9s-educaci%C3%B3n-a-distancia.jpg?s=612x612&w=0&k=20&c=YXXpW5ah8S19lQiwIU0pXfmnIsL8cH8R-OwQP4hJZQ8="></center><br>
+				<hr>
+				<h2 id="ci">Computación/Instalación</h2>
+				<p>Un curso de "computación/instalación" abarca el ensamblaje de hardware, la instalación y configuración de sistemas operativos y software, así como el mantenimiento y reparación de equipos informáticos.</p><br>
+				<center><img src="https://http2.mlstatic.com/D_789461-MLA81538152659_122024-C.jpg"></center><br>
+				<hr>
+				<h2 id="cl">Comunicación</h2>
+				<p>Un curso de lengua y literatura se enfoca en desarrollar habilidades de comunicación oral y escrita, análisis crítico de textos literarios y no literarios, y la comprensión del lenguaje y la cultura.</p><br>
+				<center><img src="https://i.pinimg.com/474x/44/27/ba/4427baa44067303f550e6f7775798c7e.jpg"></center><br>
+				<hr>
+				<h2 id="ff">Física</h2>
+				<p>Un curso de física fundamental trata sobre los principios y leyes básicas que rigen el universo, abarcando desde la Mecánica Clásica (movimiento de objetos y fuerzas) hasta la Física Moderna (relatividad, electromagnetismo y mecánica cuántica).</p><br>
+				<center><img src="https://tomi-digital-resources.storage.googleapis.com/images/classes/lessons/lsn-48101-5f304750111b2.jpeg"></center><br>
+				<hr>
+				<h2 id="ma">Matemática</h2>
+				<p>Se enfoca en el desarrollo de habilidades de razonamiento matemático para la resolución de problemas y la estructuración de pensamientos claros y coherentes. </p><br>
+				<center><img src="https://cursos.aiu.edu/images/matematica.jpg"></center><br>
+				 <hr>
+				<h2 id="cg">Contabilidad</h2>
+				<p>Un curso de contabilidad enseña a registrar, clasificar e interpretar la información financiera de una empresa para llevar un control de su situación económica y tomar decisiones informadas.</p><br>
+				<center><img src="https://www.mywebstudies.com/images/imgCursos/curso-contabilidad-financiera-m.webp"></center><br>
+				<hr>
+				<h2 id="es">Estudios Sociales</h2>
+				<p>Un curso de Estudios Sociales trata sobre el análisis de las sociedades humanas, su desarrollo, estructura y relaciones, abarcando disciplinas como la historia, la geografía y la formación ciudadana.</p><br>
+				<center><img src="https://i.pinimg.com/originals/f1/43/f9/f143f9c60fb082eba7e272e463c3d579.jpg"></center><br>
+				 <hr>
+				<h2 id="pr">Programación</h2>
+				<p>Un curso de programación enseña a crear algoritmos (pasos para resolver problemas) y a escribirlos en lenguajes de computadora (como Python o JavaScript) para que las máquinas realicen tareas.</p><br>
+				<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPTn0N_fzHGtxaXcWCiLgVX_vZfxP7HUlINUpUuNPQbrPTpLLU4XWZOAeyS1Q0zO4cHtU&usqp=CAU"></center><br>
+				<hr>
+				<h2 id="ee">Estadística</h2>
+				<p>Un curso de estadística enseña a recopilar, organizar, analizar e interpretar datos numéricos para comprender fenómenos, tomar decisiones informadas y predecir comportamientos futuros. </p><br>
+				<center><img src="https://matemovil.com/wp-content/uploads/2019/10/Curso-de-estad%C3%ADstica-gratis.jpg"></center><br>
+
+			
+			<section id="con">
+				<h1 id="jor">Logo LCM</h1>
+				<ul>
+					<li><center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvGQInlqL3WQx3fFC79OtuIZzEJvAsL_M2YA&s"> </li>
+					
+				</ul>
+			</section>
+		</article>
+		<aside>
+			<center>
+			<h6 class="barral">Contenido Relacionado</h6>
+			<hr>
+			<h4>Liceo Compu-Market</h4></center>
+			<br>
+			<br>
+			<ol>
+				<li><a href="https://www.waze.com/es/live-map/directions/liceo-compu-market-4a-avenida-29-villa-nueva?to=place.w.176554129.1765606829.10178819"target="blank">Ubicación</a> </li>
+				<li><a href="https://liceocompumarket.wordpress.com/about/">Historia</a> </li>
+				<li><a href="https://www.facebook.com/LiceoCM/"target="blank">facebook</a> </li>
+			</ol>
+		</aside>
+	</main>
+	<footer>
+		<div class="piepag">
+			<h1>Liceo Compu-Market</h1>
+			<h2>4ta Avenida 6-29, Zona 1, Villa Nueva, Guatemala</h2>
+			<h3>6623-0705</h3>
+			<h3>Tu pasaporte al Exito</h3>
+		</div>
+	</footer>
+</body>
+</html>
